@@ -58,6 +58,6 @@ attr_accessor :name, :location, :url
     return plants.map{|plant| Plant.new(plant)}
   end
 
-  
+
 
 end

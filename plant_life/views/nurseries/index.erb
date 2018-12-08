@@ -1,3 +1,5 @@
+<div class='container' id="home-container">
+  <h1 id='title'>Plant Life</h1>
 <h1>All Nurseries</h1>
 
 <hr />
@@ -10,10 +12,17 @@
   <div class="plant-info"
   id="<%= nursery.name %>">
 
-    <p><a class="name" href="/nurseries/<%= nursery.id %>"> <%=nursery.name %></a></p>
+    <p>Nursery:  <a class="name" href="/nurseries/<%= nursery.id %>"> <%=nursery.name %></a></p>
+    <p>Location:  <%= nursery.location %></p>
+    <p>Plants available from this nursery:
+      <ul>
+        <% nursery.plants.each do |plant| %>
+          <li><%= plant.name %></li>
+        <% end %>
+      </ul>
     <a class="name" href="/nurseries/<%= nursery.id %>">
     <img class="nursery_logo" src="/images/<%= nursery.name.downcase%>.jpg" alt="<%= nursery.name.downcase%>">
-  </a>
+    </a>
 
 
 
