@@ -61,6 +61,6 @@ class Plant
     values = [@nursery_id]
     result = SqlRunner.run(sql, values)[0]
     return Nursery.new(result)
-  end  
+  end
 
 end

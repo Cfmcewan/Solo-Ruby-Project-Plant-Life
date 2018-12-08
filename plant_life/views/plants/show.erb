@@ -1,0 +1,19 @@
+<div class='container' id="home-container">
+  <h1 id='title'>Plant Life</h1>
+
+<div class="container" id="show-container">
+
+  <h1><%= @plant.name %></h1>
+  <div class="row">
+    <div class="plant-info">
+
+
+      <h3>Special Feature: <%= @plant.usp %></h3>
+      <h3>Stock Quantity: <%= @plant.stock_quantity%> </h3>
+      <h3>Buying Cost:  £<%= @plant.buying_cost%> </h3>
+      <h3>Selling Price:  £<%= @plant.selling_price%>  </h3>
+      <h3>Nursery: <%= @plant.nursery.name %></h3>
+
+    </div>
+  </div>
+</div>

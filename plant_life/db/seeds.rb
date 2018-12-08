@@ -9,7 +9,7 @@ Nursery.delete_all()
 avondale = Nursery.new({
   'name' => 'The Avondale',
   'location' => 'Coventry',
-  'url' => "/images/avondale_logo.jpg"
+  'url' => "/images/avondale.jpg"
   })
 
 avondale.save()
@@ -17,7 +17,7 @@ avondale.save()
 binny_plants = Nursery.new({
   'name' => 'Binny Plants',
   'location' => 'West Lothian',
-  'url' => "/images/binny_plants_logo.jpg"
+  'url' => "/images/binny plants.jpg"
   })
 
 binny_plants.save()
@@ -25,7 +25,7 @@ binny_plants.save()
 architectural_plants = Nursery.new({
   'name' => 'Architectural Plants',
   'location' => 'West Sussex',
-  'url' => "/images/architectural_plants_logo.jpg"
+  'url' => "/images/architectural plants.jpg"
   })
 
 architectural_plants.save()
