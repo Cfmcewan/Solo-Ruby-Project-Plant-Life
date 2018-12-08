@@ -7,7 +7,7 @@ Plant.delete_all()
 Nursery.delete_all()
 
 avondale = Nursery.new({
-  'name' => 'Avondale',
+  'name' => 'The Avondale',
   'location' => 'Coventry',
   'url' => "/images/avondale_logo.jpg"
   })
@@ -30,7 +30,7 @@ architectural_plants = Nursery.new({
 
 architectural_plants.save()
 
-avondale.name = 'The Avondale'
+avondale.name = 'Avondale'
 avondale.update()
 
 aloe_vera = Plant.new({

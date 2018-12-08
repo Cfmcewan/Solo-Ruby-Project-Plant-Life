@@ -1,0 +1,25 @@
+<h1>All Nurseries</h1>
+
+<hr />
+<div class="row">
+  <p></p>
+</div>
+<div class="plant">
+
+  <% for nursery in @nursery %>
+  <div class="plant-info"
+  id="<%= nursery.name %>">
+
+    <p><a class="name" href="/nurseries/<%= nursery.id %>"> <%=nursery.name %></a></p>
+    <a class="name" href="/nurseries/<%= nursery.id %>">
+    <img class="nursery_logo" src="/images/<%= nursery.name.downcase%>.jpg" alt="<%= nursery.name.downcase%>">
+  </a>
+
+
+
+
+    <hr />
+  </div>
+  <% end %>
+
+</div>
