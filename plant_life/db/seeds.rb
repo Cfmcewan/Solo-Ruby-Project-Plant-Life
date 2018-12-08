@@ -3,6 +3,9 @@ require_relative('../models/nursery.rb')
 
 require('pry')
 
+Plant.delete_all()
+Nursery.delete_all()
+
 avondale = Nursery.new({
   'name' => 'Avondale',
   'location' => 'Coventry',
@@ -137,6 +140,11 @@ holy_basil = Plant.new({
   })
 
 holy_basil.save()
+
+holy_basil.selling_price = 16
+holy_basil.update()
+
+
 
 binding.pry
 nil

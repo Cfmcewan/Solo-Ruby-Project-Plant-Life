@@ -25,5 +25,42 @@ class Plant
     @id = result[0]['id']
   end
 
-  
+  def update()
+    sql = "UPDATE plants SET (name, usp, stock_quantity, buying_cost, selling_price, url, nursery_id) = ($1, $2, $3, $4, $5, $6, $7) WHERE id = $8"
+    values = [@name, @usp, @stock_quantity, @buying_cost, @selling_price, @url, @nursery_id, @id]
+    SqlRunner.run(sql, values)
+  end
+
+  def self.delete_all()
+    sql = "DELETE FROM plants"
+    SqlRunner.run(sql)
+  end
+
+  def delete()
+    sql = "DELETE FROM plants WHERE id = $1"
+    values = [@id]
+    SqlRunner.run(sql, values)
+  end
+
+  def self.all()
+    sql = "SELECT * FROM plants"
+    results = SqlRunner.run(sql)
+    plants = results.map{|plant_hash| Plant.new(plant_hash)}
+    return plants
+  end
+
+  def self.find(id)
+    sql = "SELECT * FROM plants WHERE id = $1"
+    values = [id]
+    plant_hash = SqlRunner.run(sql, values).first()
+    return Plant.new(plant_hash)
+  end
+
+  def nursery()
+    sql = "SELECT * FROM nurseries WHERE id = $1"
+    values = [@nursery_id]
+    result = SqlRunner.run(sql, values)[0]
+    return Nursery.new(result)
+  end  
+
 end

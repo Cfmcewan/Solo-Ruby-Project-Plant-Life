@@ -27,4 +27,37 @@ attr_accessor :name, :location, :url
     SqlRunner.run(sql, values)
   end
 
+  def self.delete_all()
+    sql = "DELETE FROM nurseries"
+    SqlRunner.run(sql)
+  end
+
+  def delete()
+    sql = "DELETE FROM nurseries WHERE id = $1"
+    values = [@id]
+    SqlRunner.run(sql, values)
+  end
+
+  def self.all()
+    sql = "SELECT * FROM nurseries"
+    results = SqlRunner.run(sql)
+    return results.map{|nursery| Nursery.new(nursery)}
+  end
+
+  def self.find(id)
+    sql = "SELECT * FROM nurseries WHERE id = $1"
+    values = [id]
+    nursery = SqlRunner.run(sql, values)[0]
+    return Nursery.new(nursery)
+  end
+
+  def plants()
+    sql = "SELECT * FROM plants WHERE nursery_id = $1"
+    values = [@id]
+    plants = SqlRunner.run(sql, values)
+    return plants.map{|plant| Plant.new(plant)}
+  end
+
+  
+
 end
