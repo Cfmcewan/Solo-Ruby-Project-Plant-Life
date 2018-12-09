@@ -1,0 +1,37 @@
+<div class='container' id="home-container">
+  <h1 id='title'>Plant Life</h1>
+
+<div id="create-container" class="container">
+
+  <h1>Add Plant</h1>
+  <hr/>
+
+  <form action="/plants" method="post">
+    <label for="name">Name</label>
+    <input type="text" name="name">
+
+    <label for="usp">Special Feature</label>
+    <input type="text" name="usp">
+
+    <label for="stock_quantity">Stock Quantity</label>
+    <input type="number" name="stock_quantity">
+
+    <label for="buying_cost">Buying Cost</label>
+    <input type="number" name="buying_cost">
+
+    <label for="selling_price">Selling Price</label>
+    <input type="number" name="selling_price">
+
+    <label for="nursery_id">Nursery</label>
+
+    <select name="nursery_id">
+      <% for nursery in @nurseries %>
+      <option value="<%=nursery.id%>"><%=nursery.name%></option>
+      <%end %>
+    </select>
+
+
+
+    <input type="submit" value="Save">
+  </form>
+</div>

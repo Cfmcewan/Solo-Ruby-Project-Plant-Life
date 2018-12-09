@@ -1,0 +1,32 @@
+<div class="container" id="edit-container">
+
+  <h1>Edit <%= @plant.name %></h1>
+  <hr/>
+
+  <form action="/plants/<%=@plant.id %>" method="post">
+    <label for="name" >Name</label>
+    <input type="text" name="name" value="<%=@plant.name%>">
+
+    <label for="usp">Special Feature</label>
+    <input type="text" name="usp" value="<%=@plant.usp%>">
+
+    <label for="stock_quantity">Stock Quantity</label>
+    <input type="number" name="stock_quantity" value="<%=@plant.stock_quantity%>">
+
+    <label for="buying_cost">Buying Cost</label>
+    <input type="number" name="buying_cost"
+    value="<%=@plant.buying_cost%>">
+
+    <label for="selling_price">Selling Price</label>
+    <input type="number" name="selling_price"
+    value="<%=@plant.selling_price%>">
+
+    <label for="nursery_id">Nursery</label>
+    <select name="nursery_id">
+      <% for nursery in @nurseries %>
+      <option <%= 'selected' if nursery.id == @plant.nursery_id %> value="<%=nursery.id%>"><%=nursery.name%></option>
+      <%end %>
+    </select>
+    <input type="submit" value="Save">
+  </form>
+</div>
