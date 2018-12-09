@@ -33,3 +33,10 @@ post '/nurseries/:id' do
   @nursery.update()
   redirect("/nurseries/#{params[:id]}")
 end
+
+
+post '/nurseries/:id/delete' do
+  nursery = Nursery.find(params['id'])
+  nursery.delete
+  redirect to '/nurseries'
+end

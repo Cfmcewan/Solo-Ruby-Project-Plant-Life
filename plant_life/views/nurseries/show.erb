@@ -5,6 +5,9 @@
 
   <h2>Plants available at <%= @nursery.name %>:</h2>
 <p><a class="button" href="/nurseries/<%= @nursery.id %>/edit">Edit Nursery</a></p>
+<form action="/nurseries/<%=@nursery.id%>/delete" method="POST">
+        <input type="submit" value="Delete">
+      </form>
   <div class="row">
     <div class="plant-info">
 
@@ -27,6 +30,7 @@
 
       <hr />
     </div>
+
     <% end %>
 
   </div>
