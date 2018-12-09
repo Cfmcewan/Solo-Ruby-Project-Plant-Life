@@ -42,5 +42,11 @@ end
 get '/plants/:id/stock_status' do
   plant = Plant.find(params['id'])
   @result = plant.stock_status
-  erb(:"plants/stock_status")
+  erb(:"plants/show")
 end
+#
+# get 'plants/:id/mark_up' do
+#   plant = Plant.find(params['id'])
+#   @result = plant.mark_up
+#   erb(:"plants/show")
+#   end
