@@ -37,4 +37,10 @@ post '/plants/:id/delete' do
   plant = Plant.find(params['id'])
   plant.delete
   redirect to '/plants'
-end 
+end
+
+get '/plants/:id/stock_status' do
+  plant = Plant.find(params['id'])
+  @result = plant.stock_status
+  erb(:"plants/stock_status")
+end

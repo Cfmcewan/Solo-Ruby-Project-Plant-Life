@@ -63,4 +63,14 @@ class Plant
     return Nursery.new(result)
   end
 
+  def stock_status()
+      if @stock_quantity < 10
+          return "Low stock"
+      elsif @stock_quantity < 1
+          return "Out of stock"
+      else
+          return "Good"
+      end
+    end
+
 end
