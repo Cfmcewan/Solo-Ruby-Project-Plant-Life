@@ -14,7 +14,7 @@
       <h3>Buying Cost:  £<%= @plant.buying_cost%> </h3>
       <h3>Selling Price:  £<%= @plant.selling_price%>  </h3>
       <h3>Nursery: <%= @plant.nursery.name %></h3>
-<a class="button" href="/plants/<%= @plant.id %>/edit">Edit Order</a>
+<a class="button" href="/plants/<%= @plant.id %>/edit">Edit Plant</a>
 <form action="/plants/<%=@plant.id%>/delete" method="POST">
         <input type="submit" value="Delete">
       </form>

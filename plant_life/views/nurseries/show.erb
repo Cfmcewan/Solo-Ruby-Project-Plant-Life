@@ -3,7 +3,8 @@
 
 <div class="container">
 
-  <h2>Plants available at <%= @nursery.name %> Nursery:</h2>
+  <h2>Plants available at <%= @nursery.name %>:</h2>
+<p><a class="button" href="/nurseries/<%= @nursery.id %>/edit">Edit Nursery</a></p>
   <div class="row">
     <div class="plant-info">
 
@@ -16,11 +17,13 @@
     <% for plant in @plants %>
     <div class="plant-info">
 
-      <p>Plant Name: <a class="name" href="/plants/<%= plant.id %>"> <%= plant.name %></a></p>
+      <p>Location: <%=@nursery.location %></p>
+      <p>Plant: <a class="name" href="/plants/<%= plant.id %>"> <%= plant.name %></a></p>
+
 
       <a class="name" href="/plants/<%= plant.id %>">
-      <img class="plant_logo" src="/images/<%= plant.name.downcase%>.jpg" alt="<%= plant.name.downcase%>">
-    </a>
+        <img class="plant_logo" src="/images/<%= plant.name.downcase%>.jpg" alt="<%= plant.name.downcase%>">
+      </a>
 
       <hr />
     </div>

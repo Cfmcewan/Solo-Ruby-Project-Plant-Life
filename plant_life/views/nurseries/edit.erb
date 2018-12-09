@@ -1,0 +1,16 @@
+<div class='container' id="home-container">
+  <h1 id='title'>Plant Life</h1>
+
+<div class="container" id="edit-container">
+
+  <h1>Edit <%= @nursery.name %></h1>
+  <hr/>
+
+  <form action="/nurseries/<%=@nursery.id %>" method="post">
+    <label for="name" >Name</label>
+    <input type="text" name="name" value="<%=@nursery.name%>">
+
+    <label for="location">Location</label>
+    <input type="text" name="location" value="<%=@nursery.location%>">
+  <input type="submit" value="Save">
+    </form>

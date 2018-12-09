@@ -25,7 +25,7 @@ end
 get '/nurseries/:id/edit' do
   @nursery = Nursery.find(params[:id])
   @plants = Plant.all()
-  erb(:edit)
+  erb(:"nurseries/edit")
 end
 
 post '/nurseries/:id' do
