@@ -4,26 +4,26 @@ require_relative('../db/sql_runner.rb')
 class Nursery
 
 attr_reader :id
-attr_accessor :name, :location, :url
+attr_accessor :name, :location
 
   def initialize(options)
     @id = options['id'].to_i() if options['id']
     @name = options['name']
     @location = options['location']
-    @url = options['url']
+
   end
 
   def save()
-      sql = "INSERT INTO nurseries (name, location, url) VALUES ($1, $2, $3) RETURNING id"
-      values = [@name, @location, @url]
+      sql = "INSERT INTO nurseries (name, location) VALUES ($1, $2) RETURNING id"
+      values = [@name, @location]
       result = SqlRunner.run(sql, values).first
       @id = result['id'].to_i()
   end
 
   def update()
-    sql = "UPDATE nurseries SET (name, location, url) = ($1, $2, $3)
-    WHERE id = $4"
-    values = [@name, @location, @url, @id]
+    sql = "UPDATE nurseries SET (name, location) = ($1, $2)
+    WHERE id = $3"
+    values = [@name, @location, @id]
     SqlRunner.run(sql, values)
   end
 

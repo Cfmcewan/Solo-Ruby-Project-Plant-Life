@@ -1,7 +1,44 @@
+div {
+  font-family: helvetica;
+}
+
 body {
-  color: black;
+  color: #667757;
 }
 
 .plant_info {
   color: black;
 }
+
+.home_image {
+  height: 400px;
+  margin-left: 150px;
+}
+
+#title {
+  text-align: center;
+  color: #667757;
+}
+
+.topnav {
+  font-family: helvetica;
+  padding: 20px;
+  text-decoration: none;
+}
+
+a {
+  color: #667757;
+}
+
+.home {
+  border: 1px solid #667757;
+  border-radius: 7px;
+  padding: 8px;
+  justify-content: space-between;
+}
+
+ul {
+  text-decoration: none;
+}
+
+.

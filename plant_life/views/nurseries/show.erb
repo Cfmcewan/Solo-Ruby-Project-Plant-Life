@@ -22,11 +22,9 @@
 
       <p>Location: <%=@nursery.location %></p>
       <p>Plant: <a class="name" href="/plants/<%= plant.id %>"> <%= plant.name %></a></p>
-
-
       <a class="name" href="/plants/<%= plant.id %>">
-        <img class="plant_logo" src="/images/<%= plant.name.downcase%>.jpg" alt="<%= plant.name.downcase%>">
-      </a>
+      <img class="plant_logo" src="/images/<%= plant.name.downcase%>.jpg" alt="<%= plant.name.downcase%>">
+    </a>
 
       <hr />
     </div>
