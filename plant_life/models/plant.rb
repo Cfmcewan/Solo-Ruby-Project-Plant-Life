@@ -79,18 +79,18 @@ class Plant
     return @selling_price - @buying_cost
   end
 
-  def get_all_plant_types()
-       plants = Plant.all
-       return plants.map {|plant| plant.plant_type}
-     end
+  def self.all_plant_types()
+    plants = Plant.all
+    all_plant_types = plants.map {|plant| plant.plant_type}
+    return all_plant_types.uniq()
+  end
 
-  def self.get_unique_plant_types()
-      unique_plant_types = get_all_plant_types.uniq
-      return unique_plant_types
-    end
-
-
-
+  def find_plant_type(type)
+    sql = "SELECT * FROM plants WHERE type = $1"
+    values = [plant_type]
+    plants = results.map{|plant_hash| Plant.new(plant_hash)}
+    return plants
+  end
 
 
 end

@@ -16,6 +16,11 @@ post '/plants' do
   redirect to '/plants'
 end
 
+get '/plants/plant_type' do
+    @all_plant_types = Plant.all_plant_types
+    erb(:"plants/plant_type")
+end
+
 get '/plants/:id' do
   @plant = Plant.find(params['id'])
   @stock = @plant.stock_status
@@ -41,12 +46,7 @@ post '/plants/:id/delete' do
   redirect to '/plants'
 end
 
-  get '/plants/plant_type' do
-      @all_plant_types = Plant.get_unique_plant_types
-      erb(:"plants/plant_type")
-  end
-#
-# post '/plants/plant_type' do
-#   @plant = Plant.find(params['id'])
-#   erb(:"plants/plant_type")
-# end
+get '/plants/plant_type/:plant_type' do
+  @plants = Plant.find_plant_type(params[:plant_type])
+  erb(:"plants/plant_type/show")
+end

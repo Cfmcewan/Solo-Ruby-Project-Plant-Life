@@ -1,0 +1,20 @@
+<div class='container' id="home-container">
+  <h1 id='title'>Plant Life</h1>
+
+<div class="container">
+
+<h2>Plants available as Succulents:</h2>
+
+  <div class="plants">
+
+    <% for plant in @plants %>
+    <div class="plant-info">
+
+      <p>Plants: <a class="name" href="/plants/plant_type"<%= plant.plant_type %>"> <%= plant.name %></a></p>
+
+      <hr />
+    </div>
+
+    <% end %>
+
+  </div>
