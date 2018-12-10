@@ -80,14 +80,12 @@ class Plant
   end
 
   def get_all_plant_types()
-       plants = self.all
-       all_plant_types = []
-       all_plant_types << plants.plant_type
-       return all_plant_types
+       plants = Plant.all
+       return plants.map {|plant| plant.plant_type}
      end
 
-  def get_unique_plant_types()
-      unique_plant_types = get_plant_types.uniq
+  def self.get_unique_plant_types()
+      unique_plant_types = get_all_plant_types.uniq
       return unique_plant_types
     end
 

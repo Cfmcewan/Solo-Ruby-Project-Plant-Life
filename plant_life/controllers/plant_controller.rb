@@ -42,8 +42,7 @@ post '/plants/:id/delete' do
 end
 
   get '/plants/plant_type' do
-      plants = Plant.all
-      @all_plant_types = plants.get_unique_plant_types
+      @all_plant_types = Plant.get_unique_plant_types
       erb(:"plants/plant_type")
   end
 #
