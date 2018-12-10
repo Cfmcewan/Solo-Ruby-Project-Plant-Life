@@ -3,10 +3,12 @@
 
 <div class="container">
 
-  <h2>Plants available at <%= @nursery.name %>:</h2>
+  <h2>Plants available at <%= @nursery.name %> in <%=@nursery.location%>:</h2>
 <p><a class="button" href="/nurseries/<%= @nursery.id %>/edit">Edit Nursery</a></p>
 <form action="/nurseries/<%=@nursery.id%>/delete" method="POST">
-        <input type="submit" value="Delete">
+        <input type="submit" value="Delete Nursery">
+        <br>
+        <hr>
       </form>
   <div class="row">
     <div class="plant-info">
@@ -20,8 +22,8 @@
     <% for plant in @plants %>
     <div class="plant-info">
 
-      <p>Location: <%=@nursery.location %></p>
-      <p>Plant: <a class="name" href="/plants/<%= plant.id %>"> <%= plant.name %></a></p>
+
+      <p><a class="name" href="/plants/<%= plant.id %>"> <%= plant.name %></a></p>
       <a class="name" href="/plants/<%= plant.id %>">
       <img class="plant_logo" src="/images/<%= plant.name.downcase%>.jpg" alt="<%= plant.name.downcase%>">
     </a>

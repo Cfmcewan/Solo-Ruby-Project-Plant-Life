@@ -47,7 +47,6 @@ post '/plants/:id/delete' do
 end
 
 
-
 get '/plants/plant_type/:plant_type' do
   @plants = Plant.find_plant_type(params[:plant_type])
   erb(:"plants/plant_type/show")

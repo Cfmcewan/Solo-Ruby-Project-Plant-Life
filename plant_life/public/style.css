@@ -6,6 +6,12 @@ body {
   color: #667757;
 }
 
+
+.plant_logo {
+  height: 300px;
+
+}
+
 .plant_info {
   color: black;
 }
@@ -24,6 +30,8 @@ body {
   font-family: helvetica;
   padding: 20px;
   text-decoration: none;
+
+
 }
 
 a {
@@ -33,12 +41,10 @@ a {
 .home {
   border: 1px solid #667757;
   border-radius: 7px;
-  padding: 8px;
+  padding: 7px;
   justify-content: space-between;
 }
 
 ul {
   text-decoration: none;
 }
-
-.
