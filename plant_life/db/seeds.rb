@@ -40,6 +40,7 @@ aloe_vera = Plant.new({
   'buying_cost' => 3,
   'selling_price' => 8,
   'url' => "/images/aloe_vera.jpg",
+  'plant_type' => 'Succulent',
   'nursery_id' => architectural_plants.id
   })
 
@@ -52,6 +53,7 @@ areca_palm = Plant.new({
   'buying_cost' => 38,
   'selling_price' => 85,
   'url' => "/images/areca_palm.jpg",
+  'plant_type' => 'Over 50cm',
   'nursery_id' => avondale.id
   })
 
@@ -64,6 +66,7 @@ dracaena = Plant.new({
   'buying_cost' => 12,
   'selling_price' => 35,
   'url' => "/images/dracaena.jpg",
+  'plant_type' => 'Succulent',
   'nursery_id' => avondale.id
   })
 
@@ -76,6 +79,7 @@ english_ivy = Plant.new({
   'buying_cost' => 3,
   'selling_price' => 8,
   'url' => "/images/english_ivy.jpg",
+  'plant_type' => 'Verigated Leaf',
   'nursery_id' => binny_plants.id
   })
 
@@ -88,6 +92,7 @@ spider_plant = Plant.new({
   'buying_cost' => 3,
   'selling_price' => 8,
   'url' => "/images/spider_plant.jpg",
+  'plant_type' => 'Verigated Leaf',
   'nursery_id' => binny_plants.id
   })
 
@@ -100,6 +105,7 @@ weeping_fig = Plant.new({
   'buying_cost' => 24,
   'selling_price' => 50,
   'url' => "/images/weeping_fig.jpg",
+  'plant_type' => 'Over 50cm',
   'nursery_id' => binny_plants.id
   })
 
@@ -112,6 +118,7 @@ azaleas = Plant.new({
   'buying_cost' => 10,
   'selling_price' => 25,
   'url' => "/images/azaleas.jpg",
+  'plant_type' => 'Aromatic',
   'nursery_id' => architectural_plants.id
   })
 
@@ -124,6 +131,7 @@ snake_plant = Plant.new({
   'buying_cost' => 13,
   'selling_price' => 30,
   'url' => "/images/dracaena.jpg",
+  'plant_type' => 'Verigated Leaf',
   'nursery_id' => architectural_plants.id
   })
 
@@ -136,6 +144,7 @@ holy_basil = Plant.new({
   'buying_cost' => 5,
   'selling_price' => 15,
   'url' => "/images/holy_basil.jpg",
+  'plant_type' => 'Aromatic',
   'nursery_id' => avondale.id
   })
 

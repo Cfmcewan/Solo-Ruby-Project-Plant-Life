@@ -40,3 +40,14 @@ post '/plants/:id/delete' do
   plant.delete
   redirect to '/plants'
 end
+
+  get '/plants/plant_type' do
+      plants = Plant.all
+      @all_plant_types = plants.get_unique_plant_types
+      erb(:"plants/plant_type")
+  end
+#
+# post '/plants/plant_type' do
+#   @plant = Plant.find(params['id'])
+#   erb(:"plants/plant_type")
+# end

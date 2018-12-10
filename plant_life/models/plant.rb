@@ -4,7 +4,7 @@ require_relative('../db/sql_runner.rb')
 class Plant
 
   attr_reader :nursery_id, :id
-  attr_accessor :name, :usp, :stock_quantity, :buying_cost, :selling_price, :url
+  attr_accessor :name, :usp, :stock_quantity, :buying_cost, :selling_price, :url, :plant_type
 
   def initialize(options)
     @id = options['id'].to_i if options['id']
@@ -14,20 +14,21 @@ class Plant
     @buying_cost = options['buying_cost'].to_i()
     @selling_price = options['selling_price'].to_i()
     @url = options['url']
+    @plant_type = options['plant_type']
     @nursery_id = options['nursery_id'].to_i()
 
   end
 
   def save()
-    sql = "INSERT INTO plants (name, usp, stock_quantity, buying_cost, selling_price, url, nursery_id) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING id"
-    values = [@name, @usp, @stock_quantity, @buying_cost, @selling_price, @url, @nursery_id]
+    sql = "INSERT INTO plants (name, usp, stock_quantity, buying_cost, selling_price, url, plant_type, nursery_id) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING id"
+    values = [@name, @usp, @stock_quantity, @buying_cost, @selling_price, @url, @plant_type, @nursery_id]
     result = SqlRunner.run(sql, values)
     @id = result[0]['id']
   end
 
   def update()
-    sql = "UPDATE plants SET (name, usp, stock_quantity, buying_cost, selling_price, url, nursery_id) = ($1, $2, $3, $4, $5, $6, $7) WHERE id = $8"
-    values = [@name, @usp, @stock_quantity, @buying_cost, @selling_price, @url, @nursery_id, @id]
+    sql = "UPDATE plants SET (name, usp, stock_quantity, buying_cost, selling_price, url, plant_type, nursery_id) = ($1, $2, $3, $4, $5, $6, $7, $8) WHERE id = $9"
+    values = [@name, @usp, @stock_quantity, @buying_cost, @selling_price, @url, @plant_type, @nursery_id, @id]
     SqlRunner.run(sql, values)
   end
 
@@ -77,6 +78,21 @@ class Plant
   def mark_up()
     return @selling_price - @buying_cost
   end
+
+  def get_all_plant_types()
+       plants = self.all
+       all_plant_types = []
+       all_plant_types << plants.plant_type
+       return all_plant_types
+     end
+
+  def get_unique_plant_types()
+      unique_plant_types = get_plant_types.uniq
+      return unique_plant_types
+    end
+
+
+
 
 
 end

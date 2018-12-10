@@ -16,5 +16,6 @@ CREATE TABLE plants (
   buying_cost INT,
   selling_price INT,
   url VARCHAR,
+  plant_type VARCHAR(255),
   nursery_id int REFERENCES nurseries(id) ON DELETE CASCADE
 );

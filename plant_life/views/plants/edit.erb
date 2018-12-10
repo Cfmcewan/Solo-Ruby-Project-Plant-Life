@@ -21,6 +21,10 @@
     <input type="number" name="selling_price"
     value="<%=@plant.selling_price%>">
 
+    <label for="plant_type">Plant Type</label>
+    <input type="text" name="plant_type"
+    value="<%=@plant.plant_type%>">
+
     <label for="nursery_id">Nursery</label>
     <select name="nursery_id">
       <% for nursery in @nurseries %>
