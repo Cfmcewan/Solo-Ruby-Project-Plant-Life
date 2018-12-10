@@ -85,9 +85,10 @@ class Plant
     return all_plant_types.uniq()
   end
 
-  def find_plant_type(type)
-    sql = "SELECT * FROM plants WHERE type = $1"
-    values = [plant_type]
+  def self.find_plant_type(type)
+    sql = "SELECT * FROM plants WHERE plant_type = $1"
+    values = [type]
+    results = SqlRunner.run(sql, values)
     plants = results.map{|plant_hash| Plant.new(plant_hash)}
     return plants
   end

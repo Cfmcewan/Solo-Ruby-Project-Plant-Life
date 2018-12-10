@@ -1,19 +1,6 @@
 <div class='container' id="home-container">
   <h1 id='title'>Plant Life</h1>
 
-
-  <form action="/plants/plant_type" method="post">
-    <label>
-    Select a plant type:
-      <select name="plant_type">
-        <% for plant_type in @all_plant_types %>
-        <option value="<%= plant_type %>"><%= plant_type %></option>
-        <% end %>
-      </select>
-    </label>
-
-
-
-
-    <input class="choose_plant_type" type='submit' value="Select Plant Type">
-  </form>
+  <% for plant_type in @all_plant_types %>
+  <a href="/plants/plant_type/<%= plant_type %>"><%= plant_type %></a>
+  <% end %>

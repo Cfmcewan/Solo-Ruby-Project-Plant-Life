@@ -3,16 +3,16 @@
 
 <div class="container">
 
-<h2>Plants available as Succulents:</h2>
+<h2>Plants available:</h2>
 
   <div class="plants">
 
     <% for plant in @plants %>
     <div class="plant-info">
 
-      <p>Plants: <a class="name" href="/plants/plant_type"<%= plant.plant_type %>"> <%= plant.name %></a></p>
+      <p>Plants: <a class="name" href="/plants/<%= plant.id %>"<%= plant.plant_type %>"> <%= plant.name %></a></p>
 
-      <hr />
+      
     </div>
 
     <% end %>

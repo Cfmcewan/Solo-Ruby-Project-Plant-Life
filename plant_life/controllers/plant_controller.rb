@@ -46,6 +46,8 @@ post '/plants/:id/delete' do
   redirect to '/plants'
 end
 
+
+
 get '/plants/plant_type/:plant_type' do
   @plants = Plant.find_plant_type(params[:plant_type])
   erb(:"plants/plant_type/show")
