@@ -63,23 +63,20 @@ class Plant
     return Nursery.new(result)
   end
 
-  def stock_status(id)
-      sql = "SELECT FROM plants WHERE id = $1"
-      values = [id]
-      plant_hash = SqrRunner.run(sql, values).first()
-      @new_plant = Plant.new(plant_hash)
-
-      if @new_plant.stock_quantity < 10
-          return "Low stock"
-      elsif @new_plant.stock_quantity < 1
-          return "Out of stock"
-      else
-          return "Good"
-      end
+  def stock_status()
+    if @stock_quantity == 0
+      return "Out of Stock"
+    elsif @stock_quantity < 10
+      return "Low Stock"
+    else
+      return "Good"
     end
-    #
-    # def mark_up()
-    #   return @selling_price - @buying_cost
-    # end
+  end
+
+
+  def mark_up()
+    return @selling_price - @buying_cost
+  end
+
 
 end

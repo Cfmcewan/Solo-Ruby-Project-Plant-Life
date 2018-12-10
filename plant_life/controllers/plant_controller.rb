@@ -18,6 +18,8 @@ end
 
 get '/plants/:id' do
   @plant = Plant.find(params['id'])
+  @stock = @plant.stock_status
+  @mark_up = @plant.mark_up
   erb(:"plants/show")
 end
 
@@ -38,15 +40,3 @@ post '/plants/:id/delete' do
   plant.delete
   redirect to '/plants'
 end
-
-get '/plants/:id/stock_status' do
-  plant = Plant.find(params['id'])
-  @result = plant.stock_status
-  erb(:"plants/show")
-end
-#
-# get 'plants/:id/mark_up' do
-#   plant = Plant.find(params['id'])
-#   @result = plant.mark_up
-#   erb(:"plants/show")
-#   end

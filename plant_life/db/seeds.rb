@@ -45,17 +45,17 @@ aloe_vera = Plant.new({
 
 aloe_vera.save()
 
-greca_palm = Plant.new({
-  'name' => 'Greca Palm',
+areca_palm = Plant.new({
+  'name' => 'Areca Palm',
   'usp' => 'Effective humidifier',
   'stock_quantity' => 12,
   'buying_cost' => 38,
   'selling_price' => 85,
-  'url' => "/images/greca_palm.jpg",
+  'url' => "/images/areca_palm.jpg",
   'nursery_id' => avondale.id
   })
 
-greca_palm.save()
+areca_palm.save()
 
 dracaena = Plant.new({
   'name' => 'Dracaena',
@@ -132,7 +132,7 @@ snake_plant.save()
 holy_basil = Plant.new({
   'name' => 'Holy Basil',
   'usp' => 'Healing balm for body, mind and spirit',
-  'stock_quantity' => 16,
+  'stock_quantity' => 0,
   'buying_cost' => 5,
   'selling_price' => 15,
   'url' => "/images/holy_basil.jpg",
