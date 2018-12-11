@@ -6,36 +6,18 @@ body {
   color: #667757;
 }
 
-table {
-  padding-top: 20px;
-  padding-bottom: 20px;
+
+a {
+  color: #667757;
 }
 
-th {
-  text-align: center;
-  font-size: 14px;
-
-
-  }
-
-td, th {
-  border: solid 1px black;
-  min-width: 65px;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  }
-
-td {
-  font-size: 13px;
-  text-align: center;
-  padding: 8px;
+ul {
+  text-decoration: none;
 }
+
 
 .plant_logo {
   height: 250px;
-
 }
 
 .plant_info {
@@ -56,13 +38,8 @@ td {
   font-family: helvetica;
   padding: 20px;
   text-decoration: none;
-
-
 }
 
-a {
-  color: #667757;
-}
 
 .home {
   border: 1px solid #667757;
@@ -71,6 +48,52 @@ a {
   justify-content: space-between;
 }
 
-ul {
-  text-decoration: none;
+.plant-table {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.plant-table td, th {
+  border: solid 1px black;
+  min-width: 60px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  }
+
+.plant-table td {
+  font-size: 13px;
+  text-align: center;
+  padding: 8px;
+}
+
+.plant-table th {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.plant-table table {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+
+.nursery-table td, th {
+  border: solid 1px black;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.nursery-table table {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+.nursery-table {
+  min-width: 200px;
 }

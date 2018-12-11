@@ -4,29 +4,39 @@
 <h3><a href="/nurseries/new">Add nursery</a></h3>
 <hr />
 <div class="row">
-  <p></p>
+  <br>
 </div>
 <div class="plant">
+
+  <table class="nursery-table">
+      <tr>
+        <th>Nursery</th>
+        <th>Location</th>
+        <th>Plants available</th>
+      </tr>
+      </table>
 
   <% for nursery in @nursery %>
   <div class="plant-info"
   id="<%= nursery.name %>">
 
-    <p>Nursery: <a class="name" href="/nurseries/<%= nursery.id %>"> <%=nursery.name %></a></p>
-    <p>Location:  <%= nursery.location %></p>
-    <p>Plants available from this nursery:
-      <ul>
+
+    <table class="nursery-table">
+    <tr>
+      <td><a class="name" href="/nurseries/<%= nursery.id %>"> <%=nursery.name %></a></td>
+      <td><%= nursery.location %></td>
+      <td>
+        <ul>
         <% nursery.plants.each do |plant| %>
           <li><%= plant.name %></li>
         <% end %>
-      </ul>
+        </ul>
+      </td>
+    </tr>
+    </table>
 
-  
 
-
-
-    <hr />
+        <% end %>
   </div>
-  <% end %>
 
 </div>
