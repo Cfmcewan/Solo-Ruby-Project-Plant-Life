@@ -16,7 +16,7 @@ ul {
 }
 
 p {
-  margin-left: 20px;
+  margin-left: 40px;
   margin-right: 20px;
   font-size: 15px;
 
@@ -48,7 +48,7 @@ p {
 
 
 .home {
-  border: 1px dotted #667757;
+  border: 1px dotted #c5c5c7;
   border-radius: 7px;
   padding: 7px;
   justify-content: space-between;
@@ -61,7 +61,7 @@ p {
 }
 
 .plant-table td, th {
-  border: dotted 1px black;
+  border: solid 1px black;
   min-width: 60px;
   padding-left: 12px;
   padding-right: 12px;
@@ -88,7 +88,7 @@ p {
 
 
 .nursery-table td, th {
-  border: dotted 1px black;
+  border: solid 1px black;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
@@ -124,12 +124,12 @@ p {
   font-size: 13px;
   text-align: center;
   padding: 8px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .plant-table-show td {
-  border: dotted 1px black;
+  border: solid 1px black;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -158,12 +158,12 @@ form {
 .delete-button {
   color: #667757;
   font-size: 25px;
-  margin-left: 20px;
+  margin-left: 40px;
   font-family: helvetica;
 }
 
 .add-button {
-  border: dotted 1px black;
+  border: dotted 2px #c5c5c7;
   width: 150px;
   padding: 15px;
   border-radius: 7px;
@@ -171,12 +171,16 @@ form {
 }
 
 .plant-selling-points {
-  margin-left: 300px;
-  margin-right: 300px;
-  margin-top: 65px;
+  margin-left: 340px;
+  margin-right: 340px;
+  margin-top: 40px;
   font-style: italic;
   font-size: 18px;
+}
 
+.plant-selling-points td {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .button {

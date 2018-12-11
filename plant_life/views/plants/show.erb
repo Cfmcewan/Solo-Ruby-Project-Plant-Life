@@ -17,7 +17,6 @@
 
     <table class="plant-table-show">
       <tr>
-        <th>Feature</th>
         <th>Stock</th>
         <th>Buying Cost</th>
         <th>Selling Price</th>
@@ -27,7 +26,7 @@
         <th>Nursery</th>
       </tr>
       <tr>
-        <td><%= @plant.usp %></td>
+
         <td><%= @plant.stock_quantity%> units</td>
         <td><%=@stock%></td>
         <td>£<%= @plant.buying_cost%></td>
@@ -38,11 +37,12 @@
       </tr>
     </table>
     </div>
-    <!-- <table class="plant-selling-points">
+    <table class="plant-selling-points">
       <tr>
         <td><img class="plant_logo" src="/images/<%= @plant.name.downcase%>.jpg" alt="<%= @plant.name.downcase%>"></td>
-        <td>Key talking points:<br><br>Anti-inflammatory Effects. One of the most well-known benefits of using ivy, particularly “English Ivy”, is for inflammation issues in the body. If you suffer from arthritis, gout, or rheumatism, you can either consume it in the form of tea or apply the leaves directly to the spot of inflammation.</td>
+        <td><%= @plant.usp %></td>
       </tr>
-    </table> -->
+
+    </table>
   </div>
 </div>

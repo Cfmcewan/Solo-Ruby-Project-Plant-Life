@@ -17,7 +17,6 @@
     <tr>
       <th>Image</th>
       <th>Name</th>
-      <th>Feature</th>
       <th>Stock</th>
       <th>Buying Cost</th>
       <th>Selling Price</th>
@@ -29,7 +28,6 @@
     <tr>
       <td><img class="plant_logo" src="/images/<%= plant.name.downcase%>.jpg" alt="<%= plant.name.downcase%>"></td>
       <td><a class="name" href="/plants/<%= plant.id %>"> <%= plant.name %></a></td>
-      <td><%=plant.usp %></td>
       <td><%=plant.stock_quantity %> units</td>
       <td>£<%=plant.buying_cost %></td>
       <td>£<%=plant.selling_price %></td>
