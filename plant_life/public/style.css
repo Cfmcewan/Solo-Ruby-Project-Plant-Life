@@ -142,6 +142,19 @@ p {
   padding-bottom: 20px;
 }
 
+.plant-type-table {
+  border: solid 1px #c5c5c7;
+  min-width: 500px;
+  padding: 30px;
+  margin-left: 350px;
+  margin-right: 350px;
+}
+
+.plant-type-table td {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .form-plant {
   margin-left: auto;
   margin-right: auto;

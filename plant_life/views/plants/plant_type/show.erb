@@ -2,19 +2,28 @@
   <h1 id='title'>Plant Life</h1>
 
 <div class="container">
-
+<br>
 <h2>Plants available:</h2>
-
+<br>
   <div class="plants">
 
     <% for plant in @plants %>
     <div class="plant-info">
 
-      <p>Plant Name: <a class="name" href="/plants/<%= plant.id %>"<%= plant.plant_type %>"> <%= plant.name %></a></p>
+    <table class="plant-type-table">
+      <tr>
+        <td><%=plant.plant_type %>:    <%= plant.name %>
+        </td>
+        <td><img class="plant_logo" src="/images/<%= plant.name.downcase%>.jpg" alt="<%= plant.name.downcase%>">
+        </td>
+      </tr>
+    </table>
 
 
     </div>
 
     <% end %>
-
+<br>
+<br>
+<br>
   </div>
