@@ -7,6 +7,8 @@
 
   <h1 class="plant-name"><%= @plant.name %></h1>
 
+<hr>
+<br>
   <p><a class="button" href="/plants/<%= @plant.id %>/edit">Edit Plant</a></p>
   <form action="/plants/<%=@plant.id%>/delete" method="POST">
     <input class="delete-button" type="submit" value="Delete Plant">

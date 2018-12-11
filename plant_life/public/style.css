@@ -6,6 +6,9 @@ body {
   color: #667757;
 }
 
+h2 {
+  text-align: center;
+}
 
 a {
   color: #667757;
@@ -61,7 +64,7 @@ p {
 }
 
 .plant-table td, th {
-  border: solid 1px black;
+  border: solid 1px #c5c5c7;
   min-width: 60px;
   padding-left: 12px;
   padding-right: 12px;
@@ -88,7 +91,7 @@ p {
 
 
 .nursery-table td, th {
-  border: solid 1px black;
+  border: solid 1px #c5c5c7;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
@@ -108,15 +111,17 @@ p {
 }
 
 .nursery-plant-table {
-  border: solid 1px black;
+  border: solid 1px #c5c5c7;
   min-width: 500px;
   padding: 30px;
-  margin-left: 15px;
+  margin-left: 400px;
+  margin-right: 400px;
 }
 
 .nursery-plant-table td {
   padding-left: 20px;
   padding-right: 20px;
+
 
 }
 
@@ -124,8 +129,10 @@ p {
   font-size: 13px;
   text-align: center;
   padding: 8px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+
+
 }
 
 .plant-table-show td {
@@ -149,27 +156,28 @@ h2 {
   margin-right: 20px;
 }
 
-form {
+/* .plant-table-show {
   margin-top: 40px;
-  margin-left: 600px;
+  margin-left: 30px;
   margin-right: 600px;
   font-family: helvetica;
   color: #667757;
-}
+} */
 
 label {
-  align-items: center;
+
 }
 
 input {
   padding-left: 8px;
   padding-right: 8px;
   align-items: center;
+}
 
 .delete-button {
   color: #667757;
-  font-size: 25px;
-  margin-left: 40px;
+  font-size: 24px;
+  margin-left: 50px;
   font-family: helvetica;
 }
 
@@ -195,7 +203,7 @@ input {
 }
 
 .button {
-  margin-left: 20px;
+  margin-left: 10px;
   border: 1px solid #c5c5c7;
   padding: 5px;
   border-radius: 5px;

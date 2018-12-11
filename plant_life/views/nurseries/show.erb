@@ -2,8 +2,10 @@
   <h1 id='title'>Plant Life</h1>
 
 <div class="container">
-
+<br>
+<br>
   <h2>Plants available at <%= @nursery.name %> in <%=@nursery.location%>:</h2>
+  <br>
 <p><a class="button" href="/nurseries/<%= @nursery.id %>/edit">Edit Nursery</a></p>
 <form action="/nurseries/<%=@nursery.id%>/delete" method="POST">
         <input class="delete-button" type="submit" value="Delete Nursery">
