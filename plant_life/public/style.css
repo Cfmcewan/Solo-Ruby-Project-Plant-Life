@@ -24,6 +24,12 @@ p {
   font-size: 15px;
 }
 
+.plant-type {
+  width: 250px;
+  margin-left: 50px;
+
+}
+
 .plant_logo {
   height: 250px;
 }
