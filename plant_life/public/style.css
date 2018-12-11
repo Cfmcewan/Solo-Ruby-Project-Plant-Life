@@ -150,10 +150,21 @@ h2 {
 }
 
 form {
-  margin-left: 20px;
+  margin-top: 40px;
+  margin-left: 600px;
+  margin-right: 600px;
   font-family: helvetica;
   color: #667757;
 }
+
+label {
+  align-items: center;
+}
+
+input {
+  padding-left: 8px;
+  padding-right: 8px;
+  align-items: center;
 
 .delete-button {
   color: #667757;

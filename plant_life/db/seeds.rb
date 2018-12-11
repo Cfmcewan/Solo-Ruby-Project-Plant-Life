@@ -35,7 +35,7 @@ avondale.update()
 
 aloe_vera = Plant.new({
   'name' => 'Aloe Vera',
-  'usp' => 'Cleans benzine from the air',
+  'usp' => 'This plant needs lots of sun, water and warmth to stay healthy. Cut open a leaf and use the gel inside to soothe burns (both from sun or fire), relieve the itching of bug bites or poison ivy.',
   'stock_quantity' => 10,
   'buying_cost' => 3,
   'selling_price' => 8,
@@ -48,7 +48,7 @@ aloe_vera.save()
 
 areca_palm = Plant.new({
   'name' => 'Areca Palm',
-  'usp' => 'Effective air humidifier',
+  'usp' => 'A natural humidifier – around 6 feet tall it can put as much as a litre of water into the air in a day.  It needs bright filtered light to be healthiest.',
   'stock_quantity' => 12,
   'buying_cost' => 38,
   'selling_price' => 85,
@@ -61,7 +61,7 @@ areca_palm.save()
 
 dracaena = Plant.new({
   'name' => 'Dracaena',
-  'usp' => 'Emits high oxygen content',
+  'usp' => 'Low maintenance plant, needs indirect sunlight and slightly moist soil, one of the most efficient plants at removing toxins from the air - emits high oxygen content.',
   'stock_quantity' => 6,
   'buying_cost' => 12,
   'selling_price' => 35,
@@ -74,7 +74,7 @@ dracaena.save()
 
 english_ivy = Plant.new({
   'name' => 'English Ivy',
-  'usp' => 'Helps reduce mould in the home',
+  'usp' => 'Helps reduce mould in the home.  Studies show that keeping an English Ivy plant on your desk will help to give you better focus because it can also absorb trace amounts of benzene which is a chemical found in office equipment.',
   'stock_quantity' => 7,
   'buying_cost' => 3,
   'selling_price' => 8,
@@ -87,7 +87,7 @@ english_ivy.save()
 
 spider_plant = Plant.new({
   'name' => 'Spider Plant',
-  'usp' => 'Combats carbon monoxide and xylene in the air',
+  'usp' => 'A  common and hardy houseplant, it’s one of the plants that NASA studied as a way to keep air clean and healthy in future space stations.  Within just two days, this plant can remove up to 90 percent of the toxins in your indoor air.',
   'stock_quantity' => 10,
   'buying_cost' => 3,
   'selling_price' => 8,
@@ -100,7 +100,7 @@ spider_plant.save()
 
 weeping_fig = Plant.new({
   'name' => 'Weeping Fig',
-  'usp' => 'Helps against emissions from new home furnishings',
+  'usp' => 'Grows slowly and doesn’t like being moved around the home (will drop its leaves).  Likes a bright spot.  This plant is particularly good at filtering formaldehyde, xylene and toluene.',
   'stock_quantity' => 3,
   'buying_cost' => 24,
   'selling_price' => 50,
@@ -113,7 +113,7 @@ weeping_fig.save()
 
 azaleas = Plant.new({
   'name' => 'Arzaleas',
-  'usp' => 'Reduces formaldehyde levels from plywood and foam',
+  'usp' => 'This plant can reduce formaldehyde in the air from sources such as plywood or foam insulation. They do best in cool areas.',
   'stock_quantity' => 10,
   'buying_cost' => 10,
   'selling_price' => 25,
@@ -126,7 +126,7 @@ azaleas.save()
 
 snake_plant = Plant.new({
   'name' => 'Snake Plant',
-  'usp' => 'Identified by NASA as top air purifying plant',
+  'usp' => 'Ideal as a house plant as this plant can endure low amounts of light at long durations.  Identified by NASA as a top air purifying plant.',
   'stock_quantity' => 14,
   'buying_cost' => 13,
   'selling_price' => 30,
@@ -139,7 +139,7 @@ snake_plant.save()
 
 holy_basil = Plant.new({
   'name' => 'Holy Basil',
-  'usp' => 'Healing balm for body, mind and spirit',
+  'usp' => 'Holy basil is considered a tonic for the body, mind and spirit.  High in anti-oxidants, it helps your body detox.  It has a spicy and refreshing fragrance and tiny colourful flowers - a very useful houseplant.',
   'stock_quantity' => 0,
   'buying_cost' => 5,
   'selling_price' => 15,
