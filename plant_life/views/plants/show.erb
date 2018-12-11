@@ -3,24 +3,46 @@
 
 <div class="container" id="show-container">
 
+
+
   <h1><%= @plant.name %></h1>
 
+  <p><a class="button" href="/plants/<%= @plant.id %>/edit">Edit Plant</a></p>
+  <form action="/plants/<%=@plant.id%>/delete" method="POST">
+    <input class="delete-button" type="submit" value="Delete Plant">
+  </form>
+
   <div class="row">
-    <div class="plant-info">
 
 
-      <h3>Special Feature: <%= @plant.usp %></h3>
-      <h3>Stock Quantity: <%= @plant.stock_quantity%> units </h3>
-      <h3>Stock level status: <%=@stock%></h3>
-      <h3>Buying Cost:  £<%= @plant.buying_cost%> </h3>
-      <h3>Selling Price:  £<%= @plant.selling_price%>  </h3>
-      <h3>Mark Up Value: £<%=@mark_up%></h3>
-      <h3>Plant Type: <%= @plant.plant_type %> </h3>
-      <h3>Nursery: <%= @plant.nursery.name %></h3>
-      <a class="button" href="/plants/<%= @plant.id %>/edit">Edit Plant</a>
-      <form action="/plants/<%=@plant.id%>/delete" method="POST">
-        <input class="delete-button" type="submit" value="Delete">
-      </form>
+    <table class="plant-table-show">
+      <tr>
+        <th>Feature</th>
+        <th>Stock</th>
+        <th>Buying Cost</th>
+        <th>Selling Price</th>
+        <th>Stock Level</th>
+        <th>Mark Up</th>
+        <th>Plant Type</th>
+        <th>Nursery</th>
+      </tr>
+      <tr>
+        <td><%= @plant.usp %></td>
+        <td><%= @plant.stock_quantity%> units</td>
+        <td><%=@stock%></td>
+        <td>£<%= @plant.buying_cost%></td>
+        <td>£<%= @plant.selling_price%></td>
+        <td>£<%=@mark_up%></td>
+        <td><%= @plant.plant_type %></td>
+        <td><%= @plant.nursery.name %></td>
+      </tr>
+    </table>
     </div>
+    <!-- <table class="plant-selling-points">
+      <tr>
+        <td><img class="plant_logo" src="/images/<%= @plant.name.downcase%>.jpg" alt="<%= @plant.name.downcase%>"></td>
+        <td>Key talking points:<br><br>Anti-inflammatory Effects. One of the most well-known benefits of using ivy, particularly “English Ivy”, is for inflammation issues in the body. If you suffer from arthritis, gout, or rheumatism, you can either consume it in the form of tea or apply the leaves directly to the spot of inflammation.</td>
+      </tr>
+    </table> -->
   </div>
 </div>

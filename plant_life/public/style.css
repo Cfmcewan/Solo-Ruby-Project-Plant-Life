@@ -18,6 +18,8 @@ ul {
 p {
   margin-left: 15px;
   margin-right: 15px;
+  font-size: 15px;
+
 }
 
 .plant_logo {
@@ -106,7 +108,7 @@ p {
 }
 
 .nursery-plant-table {
-  border: dotted 1px black;
+  border: solid 1px black;
   min-width: 500px;
   padding: 30px;
   margin-left: 15px;
@@ -115,8 +117,22 @@ p {
 .nursery-plant-table td {
   padding-left: 20px;
   padding-right: 20px;
+
 }
 
+.plant-table-show {
+  font-size: 13px;
+  text-align: center;
+  padding: 8px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.plant-table-show td {
+  border: dotted 1px black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 
 h1 {
   margin-left: 15px;
@@ -143,6 +159,7 @@ form {
   color: #667757;
   font-size: 25px;
   padding-left: 10px;
+  font-family: helvetica;
 }
 
 .add-button {
@@ -150,5 +167,14 @@ form {
   width: 150px;
   padding: 15px;
   border-radius: 7px;
-  
+
+}
+
+.plant-selling-points {
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 65px;
+  font-style: italic;
+  font-size: 18px;
+
 }
