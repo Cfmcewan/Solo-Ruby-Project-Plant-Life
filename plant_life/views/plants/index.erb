@@ -13,22 +13,40 @@
   <% for plant in @plants %>
   <div class="plant-info">
 
-    <p>Name: <a class="name" href="/plants/<%= plant.id %>"> <%= plant.name %></a></p>
-    <p>Special Feature:  <%=plant.usp %></p>
-    <p>Stock Quantity:  <%=plant.stock_quantity %> units</p>
-    <p>Buying Cost:  £<%=plant.buying_cost %></p>
-    <p>Selling Price:  £<%=plant.selling_price %></p>
-    <p>Stock level status: <%=plant.stock_status %></p>
-    <p>Mark Up Value: £<%=plant.mark_up %></p>
-    <p>Plant Type: <%=plant.plant_type %></p>
-    <p>Nursery: <%= plant.nursery.name %></p>
+  <table>
+    <tr>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Feature</th>
+      <th>Stock</th>
+      <th>Buying Cost</th>
+      <th>Selling Price</th>
+      <th>Stock Level</th>
+      <th>Mark Up</th>
+      <th>Plant Type</th>
+      <th>Nursery</th>
+      </tr>
+    <tr>
+      <td><img class="plant_logo" src="/images/<%= plant.name.downcase%>.jpg" alt="<%= plant.name.downcase%>"></td>
+      <td><a class="name" href="/plants/<%= plant.id %>"> <%= plant.name %></a></td>
+      <td><%=plant.usp %></td>
+      <td><%=plant.stock_quantity %> units</td>
+      <td>£<%=plant.buying_cost %></td>
+      <td>£<%=plant.selling_price %></td>
+      <td><%=plant.stock_status %></td>
+      <td>£<%=plant.mark_up %></td>
+      <td><%=plant.plant_type %></td>
+      <td><%= plant.nursery.name %></td>
+    </tr>
+    </table>
+    <br>
 
 
-    <a class="name" href="/plants/<%= plant.id %>">
-    <img class="plant_logo" src="/images/<%= plant.name.downcase%>.jpg" alt="<%= plant.name.downcase%>">
-  </a>
 
-    <hr />
+
+
+
+
   </div>
   <% end %>
 
