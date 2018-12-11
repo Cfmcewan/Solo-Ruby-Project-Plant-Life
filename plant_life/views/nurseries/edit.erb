@@ -6,11 +6,11 @@
   <h1>Edit <%= @nursery.name %></h1>
   <hr/>
 
-  <form action="/nurseries/<%=@nursery.id %>" method="post">
-    <label for="name" >Name</label>
-    <input type="text" name="name" value="<%=@nursery.name%>">
+  <form class="form-nursery" action="/nurseries/<%=@nursery.id %>" method="post">
+    <label class="label-nursery" for="name" >Name</label>
+    <input class="input-nursery" type="text" name="name" value="<%=@nursery.name%>">
 
-    <label for="location">Location</label>
-    <input type="text" name="location" value="<%=@nursery.location%>">
-  <input type="submit" value="Save">
+    <label class="label-nursery" for="location">Location</label>
+    <input class="input-nursery" type="text" name="location" value="<%=@nursery.location%>">
+  <input class="save-nursery" type="submit" value="Save">
     </form>

@@ -4,40 +4,43 @@
 <div id="create-container" class="container">
 
   <h1>Add Plant</h1>
+<br>
+<br>
 
+  <form class="form-plant" action="/plants" method="post">
+    <label class="label-plant" for="url">Image</label>
+    <input class="input-plant" type="text" name="url">
 
-  <form class="form-plant-new" action="/plants" method="post">
-    <label for="url">Image</label>
-    <input type="text" name="url">
+    <label class="label-plant" "for="name">Name</label>
+    <input class="input-plant" type="text" name="name">
 
-    <label for="name">Name</label>
-    <input type="text" name="name">
+    <label class="label-plant" for="usp">Special Feature</label>
+    <input class="input-plant" type="text" name="usp">
 
-    <label for="usp">Special Feature</label>
-    <input type="text" name="usp">
+    <label class="label-plant" for="stock_quantity">Stock Quantity</label>
+    <input class="input-new-plant" type="number" name="stock_quantity">
 
-    <label for="stock_quantity">Stock Quantity</label>
-    <input type="number" name="stock_quantity">
+    <label class="label-plant" for="buying_cost">Buying Cost</label>
+    <input class="input-plant" type="number" name="buying_cost">
 
-    <label for="buying_cost">Buying Cost</label>
-    <input type="number" name="buying_cost">
+    <label class="label-plant" for="selling_price">Selling Price</label>
+    <input class="input-plant" type="number" name="selling_price">
 
-    <label for="selling_price">Selling Price</label>
-    <input type="number" name="selling_price">
+    <label class="label-plant" for="plant_type">Plant Type</label>
+    <input class="input-plant" type="text" name="plant_type">
 
-    <label for="plant_type">Plant Type</label>
-    <input type="text" name="plant_type">
-
-    <label for="nursery_id">Nursery</label>
+    <label class="label-plant" for="nursery_id">Nursery</label>
 
     <select name="nursery_id">
       <% for nursery in @nurseries %>
-      <option value="<%=nursery.id%>"><%=nursery.name%></option>
+      <option class="option-plant" value="<%=nursery.id%>"><%=nursery.name%></option>
       <%end %>
     </select>
 
 
 
-    <input type="submit" value="Save">
+    <input class="save" type="submit" value="Save">
   </form>
+  <br>
+  <br>
 </div>

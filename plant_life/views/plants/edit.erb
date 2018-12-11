@@ -1,31 +1,31 @@
 <div class="container" id="edit-container">
 
-  <h1>Edit <%= @plant.name %></h1>
-  <hr/>
+  <h1>Edit <%= @plant.name %> plant:</h1>
 
-  <form action="/plants/<%=@plant.id %>" method="post">
-    <label for="name" >Name</label>
-    <input type="text" name="name" value="<%=@plant.name%>">
 
-    <label for="usp">Special Feature</label>
-    <input type="text" name="usp" value="<%=@plant.usp%>">
+  <form class="form-plant action="/plants/<%=@plant.id %>" method="post">
+    <label class="label-plant" for="name" >Name</label>
+    <input class="input-plant" type="text" name="name" value="<%=@plant.name%>">
 
-    <label for="stock_quantity">Stock Quantity</label>
-    <input type="number" name="stock_quantity" value="<%=@plant.stock_quantity%>">
+    <label class="label-plant" for="usp">Special Feature</label>
+    <input class="input-plant" type="text" name="usp" value="<%=@plant.usp%>">
 
-    <label for="buying_cost">Buying Cost</label>
-    <input type="number" name="buying_cost"
+    <label class="label-plant" for="stock_quantity">Stock Quantity</label>
+    <input class="input-plant" type="number" name="stock_quantity" value="<%=@plant.stock_quantity%>">
+
+    <label class="label-plant" for="buying_cost">Buying Cost</label>
+    <input class="input-plant" type="number" name="buying_cost"
     value="<%=@plant.buying_cost%>">
 
-    <label for="selling_price">Selling Price</label>
-    <input type="number" name="selling_price"
+    <label class="label-plant" for="selling_price">Selling Price</label>
+    <input class="input-plant" type="number" name="selling_price"
     value="<%=@plant.selling_price%>">
 
-    <label for="plant_type">Plant Type</label>
-    <input type="text" name="plant_type"
+    <label class="label-plant" for="plant_type">Plant Type</label>
+    <input class="input-plant" type="text" name="plant_type"
     value="<%=@plant.plant_type%>">
 
-    <label for="nursery_id">Nursery</label>
+    <label class="label-plant" for="nursery_id">Nursery</label>
     <select name="nursery_id">
       <% for nursery in @nurseries %>
       <option <%= 'selected' if nursery.id == @plant.nursery_id %> value="<%=nursery.id%>"><%=nursery.name%></option>

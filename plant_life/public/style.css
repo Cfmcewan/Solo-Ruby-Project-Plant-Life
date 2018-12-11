@@ -22,7 +22,6 @@ p {
   margin-left: 40px;
   margin-right: 20px;
   font-size: 15px;
-
 }
 
 .plant_logo {
@@ -121,8 +120,6 @@ p {
 .nursery-plant-table td {
   padding-left: 20px;
   padding-right: 20px;
-
-
 }
 
 .plant-table-show {
@@ -131,14 +128,62 @@ p {
   padding: 8px;
   margin-left: 40px;
   margin-right: 40px;
-
-
 }
 
 .plant-table-show td {
-  border: solid 1px black;
+  border: solid 1px #c5c5c7;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.form-plant {
+  margin-left: auto;
+  margin-right: auto;
+  width: 170px;
+}
+
+.label-plant label {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.input-plant {
+  padding: 8px;
+  border-radius: 7px;
+}
+
+.option-new-plant option{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 150px;
+}
+
+.save {
+  color: grey;
+  font-size: 30px;
+  width: 150px;
+  padding-top: 10px;
+}
+
+.save-nursery {
+  color: grey;
+  font-size: 30px;
+  width: 100px;
+  padding-top: 10px;
+}
+
+.form-nursery {
+  margin-left: 400px;
+}
+
+.label-nursery {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.input-nursery {
+  padding: 8px;
+  border-radius: 7px;
 }
 
 h1 {
@@ -156,23 +201,12 @@ h2 {
   margin-right: 20px;
 }
 
-/* .plant-table-show {
-  margin-top: 40px;
-  margin-left: 30px;
-  margin-right: 600px;
-  font-family: helvetica;
-  color: #667757;
-} */
 
-label {
-
-}
-
-input {
+/* input {
   padding-left: 8px;
   padding-right: 8px;
   align-items: center;
-}
+} */
 
 .delete-button {
   color: #667757;
@@ -213,6 +247,6 @@ input {
 }
 
 .plant-name {
-  text-align: center;
+  margin-left: 50px;
   padding-top: 80px;
 }
