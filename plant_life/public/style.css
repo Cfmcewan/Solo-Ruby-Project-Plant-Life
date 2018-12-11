@@ -16,8 +16,8 @@ ul {
 }
 
 p {
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
   font-size: 15px;
 
 }
@@ -130,27 +130,27 @@ p {
 
 .plant-table-show td {
   border: dotted 1px black;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 h1 {
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 h3 {
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 h2 {
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 form {
-  margin-left: 15px;
+  margin-left: 20px;
   font-family: helvetica;
   color: #667757;
 }
@@ -158,7 +158,7 @@ form {
 .delete-button {
   color: #667757;
   font-size: 25px;
-  padding-left: 10px;
+  margin-left: 20px;
   font-family: helvetica;
 }
 
@@ -177,4 +177,19 @@ form {
   font-style: italic;
   font-size: 18px;
 
+}
+
+.button {
+  margin-left: 20px;
+  border: 1px solid #c5c5c7;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 13px;
+  text-decoration: none;
+
+}
+
+.plant-name {
+  text-align: center;
+  padding-top: 80px;
 }
