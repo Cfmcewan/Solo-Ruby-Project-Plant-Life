@@ -48,7 +48,7 @@ aloe_vera.save()
 
 areca_palm = Plant.new({
   'name' => 'Areca Palm',
-  'usp' => 'Effective humidifier',
+  'usp' => 'Effective air humidifier',
   'stock_quantity' => 12,
   'buying_cost' => 38,
   'selling_price' => 85,
@@ -74,7 +74,7 @@ dracaena.save()
 
 english_ivy = Plant.new({
   'name' => 'English Ivy',
-  'usp' => 'Reduces airbourne faecal matter particles',
+  'usp' => 'Helps reduce mould in the home',
   'stock_quantity' => 7,
   'buying_cost' => 3,
   'selling_price' => 8,

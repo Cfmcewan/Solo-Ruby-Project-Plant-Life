@@ -14,14 +14,17 @@ table {
 th {
   text-align: center;
   font-size: 14px;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+
+
   }
 
 td, th {
   border: solid 1px black;
+  min-width: 65px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   }
 
 td {
