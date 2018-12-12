@@ -10,6 +10,7 @@ h2 {
   text-align: center;
 }
 
+
 a {
   color: #667757;
 }
@@ -31,8 +32,8 @@ p {
 }
 
 .plant-type {
-  width: 250px;
-  margin-left: 50px;
+  width: 200px;
+  margin-left: 90px;
 
 }
 
@@ -150,7 +151,7 @@ p {
 
 .plant-type-table {
   border: solid 1px #c5c5c7;
-  min-width: 500px;
+  min-width: 600px;
   padding: 30px;
   margin-left: 350px;
   margin-right: 350px;
