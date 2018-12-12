@@ -10,6 +10,13 @@ h2 {
   text-align: center;
 }
 
+h6 {
+  font-size: 17px;
+  font-weight: normal;
+  margin-left: 20px;
+  font-style: italic;
+  color: grey;
+}
 
 a {
   color: #667757;
@@ -26,14 +33,14 @@ p {
 }
 
 .hero {
-  width: 700px;
-  margin-left: 300px;
-  padding-top: 30px;
+  width: 400px;
+  margin-left: 20px;
+  padding-top: 20px;
 }
 
 .plant-type {
   width: 200px;
-  margin-left: 90px;
+  margin-left: 20px;
 
 }
 
@@ -46,8 +53,11 @@ p {
 }
 
 .home_image {
-  height: 400px;
-  margin-left: 150px;
+  width: 1200px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 30px;
+
 }
 
 #title {
