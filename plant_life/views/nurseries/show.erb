@@ -1,37 +1,32 @@
 <div class='container' id="home-container">
-
-
 <div class="container">
 <br>
 <br>
   <h2>Plants available at <%= @nursery.name %> in <%=@nursery.location%>:</h2>
-  <br>
-<p><a class="button" href="/nurseries/<%= @nursery.id %>/edit">Edit Nursery</a></p>
-<form action="/nurseries/<%=@nursery.id%>/delete" method="POST">
+<br>
+  <p><a class="button" href="/nurseries/<%= @nursery.id %>/edit">Edit Nursery</a></p>
+    <form action="/nurseries/<%=@nursery.id%>/delete" method="POST">
         <input class="delete-button" type="submit" value="Delete Nursery">
         <br>
         <br>
-      </form>
-  <div class="row">
-    <div class="plant-info">
-
-    </div>
-  </div>
-
-  <div class="plants">
-
-    <% for plant in @plants %>
-    <div class="plant-info">
-      <table class="nursery-plant-table">
-        <tr>
-          <td><a class="name" href="/plants/<%= plant.id %>"> <%= plant.name %></a></td>
-          <td>  <a class="name" href="/plants/<%= plant.id %>">
-            <img class="plant_logo" src="/images/<%= plant.name.downcase%>.jpg" alt="<%= plant.name.downcase%>">
-          </a></td>
+    </form>
+<div class="row">
+<div class="plant-info">
+</div>
+</div>
+<div class="plants">
+  <% for plant in @plants %>
+<div class="plant-info">
+    <table class="nursery-plant-table">
+      <tr>
+        <td><a class="name" href="/plants/<%= plant.id %>"> <%= plant.name %></a></td>
+        <td>  <a class="name" href="/plants/<%= plant.id %>">
+              <img class="plant_logo" src="/images/<%= plant.name.downcase%>.jpg" alt="<%= plant.name.downcase%>">
+              </a></td>
         </tr>
       </table>
 <br>
-    </div>
+</div>
 
     <% end %>
 

@@ -1,23 +1,21 @@
 <div class='container' id="home-container">
-
-
 <div class="container">
 <br>
-<h2>Plants available:</h2>
+  <h2>Plants available:</h2>
 <br>
   <div class="plants">
 
     <% for plant in @plants %>
     <div class="plant-info">
 
-    <table class="plant-type-table">
-      <tr>
-        <td><%=plant.plant_type %>:    <%= plant.name %>
-        </td>
-        <td><img class="plant_logo" src="/images/<%= plant.name.downcase%>.jpg" alt="<%= plant.name.downcase%>">
-        </td>
-      </tr>
-    </table>
+      <table class="plant-type-table">
+        <tr>
+          <td><%=plant.plant_type %>:    <%= plant.name %>
+          </td>
+          <td><img class="plant_logo" src="/images/<%= plant.name.downcase%>.jpg" alt="<%= plant.name.downcase%>">
+          </td>
+        </tr>
+      </table>
 
 
     </div>
@@ -26,4 +24,4 @@
 <br>
 <br>
 <br>
-  </div>
+</div>

@@ -1,8 +1,5 @@
 <div class='container' id="home-container">
-  
-
 <div id="create-container" class="container">
-
   <h1>Add Plant</h1>
 <br>
 <br>
@@ -18,7 +15,7 @@
     <input class="input-plant" type="text" name="usp">
 
     <label class="label-plant" for="stock_quantity">Stock Quantity</label>
-    <input class="input-new-plant" type="number" name="stock_quantity">
+    <input class="input-plant" type="number" name="stock_quantity">
 
     <label class="label-plant" for="buying_cost">Buying Cost</label>
     <input class="input-plant" type="number" name="buying_cost">
@@ -36,9 +33,7 @@
       <option class="option-plant" value="<%=nursery.id%>"><%=nursery.name%></option>
       <%end %>
     </select>
-
-
-
+    
     <input class="save" type="submit" value="Save">
   </form>
   <br>

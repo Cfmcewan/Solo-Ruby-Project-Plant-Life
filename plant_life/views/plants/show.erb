@@ -1,22 +1,13 @@
 <div class='container' id="home-container">
-
-
 <div class="container" id="show-container">
-
-
-
   <h1 class="plant-name"><%= @plant.name %></h1>
-
-
 <br>
   <p><a class="button" href="/plants/<%= @plant.id %>/edit">Edit Plant</a></p>
-  <form action="/plants/<%=@plant.id%>/delete" method="POST">
-    <input class="delete-button" type="submit" value="Delete Plant">
-  </form>
+    <form action="/plants/<%=@plant.id%>/delete" method="POST">
+      <input class="delete-button" type="submit" value="Delete Plant">
+    </form>
 <br>
   <div class="row">
-
-
     <table class="plant-table-show">
       <tr>
         <th>Stock</th>
@@ -28,7 +19,6 @@
         <th>Nursery</th>
       </tr>
       <tr>
-
         <td><%= @plant.stock_quantity%> units</td>
         <td><%=@stock%></td>
         <td>£<%= @plant.buying_cost%></td>
@@ -44,7 +34,6 @@
         <td><img class="plant_logo" src="/images/<%= @plant.name.downcase%>.jpg" alt="<%= @plant.name.downcase%>"></td>
         <td><%= @plant.usp %></td>
       </tr>
-
     </table>
   </div>
 </div>

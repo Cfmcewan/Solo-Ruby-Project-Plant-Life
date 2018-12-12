@@ -26,7 +26,7 @@
       <th>Nursery</th>
       </tr>
     <tr>
-      <td><img class="plant_logo" src="/images/<%= plant.name.downcase%>.jpg" alt="<%= plant.name.downcase%>"></td>
+      <td><a href="/plants/<%= plant.id %>"><img class="plant_logo" src="/images/<%= plant.name.downcase%>.jpg" alt="<%= plant.name.downcase%>"></td>
       <td><a class="name" href="/plants/<%= plant.id %>"> <%= plant.name %></a></td>
       <td><%=plant.stock_quantity %> units</td>
       <td>£<%=plant.buying_cost %></td>

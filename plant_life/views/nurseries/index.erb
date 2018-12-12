@@ -1,43 +1,38 @@
 <div class='container' id="home-container">
-  
-<h1>All Nurseries</h1>
-<h3 class="add-button"><a href="/nurseries/new">Add nursery</a></h3>
+
+  <h1>All Nurseries</h1>
+  <h3 class="add-button"><a href="/nurseries/new">Add nursery</a></h3>
 
 <div class="row">
   <br>
 </div>
 <div class="plant">
-
   <table class="nursery-table">
-      <tr>
-        <th>Nursery</th>
-        <th>Location</th>
-        <th>Plants available</th>
-      </tr>
-      </table>
+    <tr>
+      <th>Nursery</th>
+      <th>Location</th>
+      <th>Plants available</th>
+    </tr>
+  </table>
 
   <% for nursery in @nursery %>
-  <div class="plant-info"
+<div class="plant-info"
   id="<%= nursery.name %>">
-
-
     <table class="nursery-table">
-    <tr>
-      <td><a class="name" href="/nurseries/<%= nursery.id %>"> <%=nursery.name %></a></td>
-      <td><%= nursery.location %></td>
-      <td>
-        <ul>
-        <% nursery.plants.each do |plant| %>
-          <li><%= plant.name %></li>
+      <tr>
+        <td><a class="name" href="/nurseries/<%= nursery.id %>"> <%=nursery.name %></a></td>
+        <td><%= nursery.location %></td>
+        <td>
+          <ul>
+            <% nursery.plants.each do |plant| %>
+              <li><%= plant.name %></li>
         <% end %>
-        </ul>
-      </td>
-    </tr>
+          </ul>
+        </td>
+      </tr>
     </table>
-
-
         <% end %>
-  </div>
+</div>
 <br>
 <br>
 </div>

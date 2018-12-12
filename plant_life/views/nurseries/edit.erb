@@ -1,16 +1,11 @@
 <div class='container' id="home-container">
-
-
 <div class="container" id="edit-container">
-
   <h1>Edit <%= @nursery.name %></h1>
-  <hr/>
 
   <form class="form-nursery" action="/nurseries/<%=@nursery.id %>" method="post">
     <label class="label-nursery" for="name" >Name</label>
     <input class="input-nursery" type="text" name="name" value="<%=@nursery.name%>">
-
     <label class="label-nursery" for="location">Location</label>
     <input class="input-nursery" type="text" name="location" value="<%=@nursery.location%>">
-  <input class="save-nursery" type="submit" value="Save">
-    </form>
+    <input class="save-nursery" type="submit" value="Save">
+  </form>
