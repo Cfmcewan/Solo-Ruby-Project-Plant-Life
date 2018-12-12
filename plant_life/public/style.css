@@ -41,11 +41,25 @@ p {
 .plant-type {
   width: 200px;
   margin-left: 20px;
+  border: 2px solid #c5c5c7;
+}
 
+.plant-type:hover {
+  border: 2px dotted #c5c5c7;
 }
 
 .plant_logo {
   height: 250px;
+}
+
+
+.plant-logo-intable {
+  height: 250px;
+}
+
+.plant-logo-intable:hover {
+  height: 250px;
+  border: 1px dotted #c5c5c7;
 }
 
 .plant_info {
@@ -163,14 +177,14 @@ p {
 
 .plant-type-table {
   border: solid 1px #c5c5c7;
-  min-width: 600px;
+  min-width: 650px;
   padding: 30px;
   margin-left: 350px;
   margin-right: 350px;
 }
 
 .plant-type-table td {
-  padding-left: 20px;
+  padding-left: 40px;
   padding-right: 20px;
 }
 

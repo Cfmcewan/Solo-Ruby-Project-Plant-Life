@@ -2,7 +2,7 @@
 
 <h1>All Plants</h1>
 
-<h3 class="add-button"><a href="/plants/new">Add new plant</a></h3>
+<h3 class="add-button"><a href="/plants/new">Add plant</a></h3>
 <br>
 
 <div class="row">
@@ -26,7 +26,7 @@
       <th>Nursery</th>
       </tr>
     <tr>
-      <td><a href="/plants/<%= plant.id %>"><img class="plant_logo" src="/images/<%= plant.name.downcase%>.jpg" alt="<%= plant.name.downcase%>"></td>
+      <td><a href="/plants/<%= plant.id %>"><img class="plant-logo-intable" src="/images/<%= plant.name.downcase%>.jpg" alt="<%= plant.name.downcase%>"></td>
       <td><a class="name" href="/plants/<%= plant.id %>"> <%= plant.name %></a></td>
       <td><%=plant.stock_quantity %> units</td>
       <td>£<%=plant.buying_cost %></td>
