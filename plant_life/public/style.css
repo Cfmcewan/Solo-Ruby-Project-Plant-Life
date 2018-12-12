@@ -24,6 +24,12 @@ p {
   font-size: 15px;
 }
 
+.hero {
+  width: 700px;
+  margin-left: 300px;
+  padding-top: 30px;
+}
+
 .plant-type {
   width: 250px;
   margin-left: 50px;
