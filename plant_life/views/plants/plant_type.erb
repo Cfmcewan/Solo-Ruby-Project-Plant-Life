@@ -1,10 +1,7 @@
 <div class='container' id="home-container">
 
-<br>
-<br>
-<br>
-<br>
 
+<h6>Select plant type to view stock available</h6>
   <% for plant_type in @all_plant_types %>
   <a href="/plants/plant_type/<%= plant_type %>"><img class ="plant-type" src="/images/<%= plant_type %>.jpg"</a>
   <% end %>
