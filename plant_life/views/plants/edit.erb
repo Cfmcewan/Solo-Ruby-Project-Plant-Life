@@ -3,7 +3,7 @@
   <h1>Edit <%= @plant.name %> plant:</h1>
 
 
-  <form class="form-plant action="/plants/<%=@plant.id %>" method="post">
+  <form class="form-plant" action="/plants/<%=@plant.id %>"  method="post">
     <label class="label-plant" for="name" >Name</label>
     <input class="input-plant" type="text" name="name" value="<%=@plant.name%>">
 
@@ -30,9 +30,7 @@
       <% for nursery in @nurseries %>
       <option <%= 'selected' if nursery.id == @plant.nursery_id %> value="<%=nursery.id%>"><%=nursery.name%></option>
       <%end %>
-    </select>
-    <input type="submit" value="Save">
+   </select>
+  <input type="submit" value="Save">
   </form>
-  <br>
-  <br>
 </div>
