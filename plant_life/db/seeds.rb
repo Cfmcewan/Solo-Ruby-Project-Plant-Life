@@ -1,8 +1,6 @@
 require_relative('../models/nursery.rb')
 require_relative('../models/plant.rb')
 
-require('pry')
-
 Plant.delete_all()
 Nursery.delete_all()
 
@@ -153,7 +151,4 @@ holy_basil.save()
 holy_basil.selling_price = 16
 holy_basil.update()
 
-
-
-binding.pry
 nil

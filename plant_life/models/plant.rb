@@ -65,7 +65,7 @@ class Plant
   end
 
   def stock_status()
-    if @stock_quantity == 0
+    if @stock_quantity <= 0
       return "Out of Stock"
     elsif @stock_quantity < 10
       return "Low Stock"
