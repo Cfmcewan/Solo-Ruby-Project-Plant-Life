@@ -7,6 +7,18 @@ Project Objectives
 - Web Programming (REST, MVC)
 - Interacting with a PostgreSQL database (CRUD)
 
+MVP:
+- The inventory should track individual products, including a name, description, stock quantity, buying cost, and selling price.
+- The inventory should track suppliers, including a name and any other appropriate details
+- Create, edit and delete suppliers and products separately
+- Show an inventory page, listing all the details for all the products in stock in a single view
+- The app should visually highlight "low stock" and "out of stock" items to the user
+
+Extensions Completed:
+- Calculate the markup on items in the store, and display it in the inventory
+- Filter the inventory list by supplier.  
+- Provide an option to filter the inventory list by these categories.
+
 User Case Stories:
 1.  As a shop owner with a daily high turn over of plant sales 
     I want to keep track of all my stock levels in real time
