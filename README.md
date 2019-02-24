@@ -25,7 +25,7 @@ User Case Stories:
     So that I can improve staff confidence, customer service and maintain consistent messages
     
 5.  As a shop owner working with a large range of plants
-    I want a system that filters plants into different categories such as verigated, aromatic
+    I want a system that filters plants into different categories such as verigated or aromatic,
     So that I can easily find products in the app and help answer customer queries
 
 To run the app:
