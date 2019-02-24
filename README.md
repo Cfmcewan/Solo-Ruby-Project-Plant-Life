@@ -40,13 +40,13 @@ User Case Stories:
     I want a system that filters plants into different categories such as verigated or aromatic,
     So that I can easily find products in the app and help answer customer queries
 
-To run the app:
+To run the app use 'plant_life' folder
 
 In terminal:
 1.  createdb plant_life
-2.  psql -d plant_life -f db/plant_life.sql (in master file)
-3.  ruby db/seeds.rb
-4.  ruby controller.rb
+2.  psql -d plant_life -f db/plant_life.sql 
+3.  ruby db/seeds.rb  
+4.  ruby controller.rb  
 5.  in browser: http://localhost:4567
 
 
