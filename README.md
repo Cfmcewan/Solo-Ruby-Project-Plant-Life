@@ -33,7 +33,7 @@ User Case Stories:
     So that I can offer autonomy to staff to make decisions about stock
 
 4.  As a shop owner employing part time staff with limited product knowledge
-    I want a system that can provide key talking points for staff to share with customers
+    I want a system that can provide key talking points about each plant product for staff to share with customers
     So that I can improve staff confidence, customer service and maintain consistent messages
     
 5.  As a shop owner working with a large range of plants
