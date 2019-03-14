@@ -1,3 +1,6 @@
+require('sinatra')
+require('sinatra/contrib/all')if development?
+
 require_relative('../models/plant.rb')
 require_relative('../models/nursery.rb')
 
